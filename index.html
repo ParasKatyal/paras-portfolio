@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Paras Katyal | Portfolio</title>
+<style>
+:root{--bg:#fffdf7;--card:#fff;--ink:#172033;--muted:#5e687a;--orange:#ff6b35;--purple:#6c63ff;--green:#00a884;--line:#ece8df}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+body{font-family:Inter,Segoe UI,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}
+nav{position:fixed;inset:0 0 auto;z-index:10;background:#fffdf7ee;backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav{max-width:1120px;margin:auto;padding:15px 24px;display:flex;justify-content:space-between;align-items:center}
+.logo{font-size:24px;font-weight:900;color:var(--orange)}.links{display:flex;gap:24px;font-weight:700;color:var(--muted)}
+.links a:hover{color:var(--orange)}
+.hero{min-height:92vh;max-width:1120px;margin:auto;padding:120px 24px 70px;display:grid;grid-template-columns:1.25fr .75fr;gap:55px;align-items:center}
+.badge{display:inline-block;background:#fff0e9;color:#e95422;padding:8px 14px;border-radius:99px;font-weight:800;margin-bottom:20px}
+h1{font-size:clamp(50px,8vw,86px);line-height:.98;letter-spacing:-4px;margin-bottom:22px}
+.gradient{background:linear-gradient(90deg,var(--orange),var(--purple));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{font-size:20px;color:var(--muted);max-width:650px}
+.buttons{display:flex;gap:14px;margin-top:30px;flex-wrap:wrap}
+.btn{padding:13px 20px;border-radius:12px;font-weight:800;border:2px solid var(--ink)}.primary{background:var(--orange);border-color:var(--orange);color:#fff}.secondary{background:#fff}
+.profile{background:linear-gradient(145deg,#fff,#fff3d6);border:1px solid var(--line);border-radius:28px;padding:35px;box-shadow:0 20px 50px #261f1514;transform:rotate(2deg)}
+.avatar{width:130px;height:130px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(135deg,var(--purple),var(--orange));color:#fff;font-size:46px;font-weight:900;margin-bottom:25px}
+.profile h2{font-size:28px}.profile p{font-size:16px;margin-top:7px}
+section{max-width:1120px;margin:auto;padding:80px 24px}.title{font-size:42px;letter-spacing:-1.5px;margin-bottom:10px}.sub{color:var(--muted);margin-bottom:35px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:26px;box-shadow:0 10px 30px #261f150d}
+.card h3{font-size:22px;margin-bottom:9px}.card p{color:var(--muted)}
+.tag{display:inline-block;margin:6px 5px 0 0;padding:7px 10px;border-radius:10px;background:#f2efff;color:#534bd1;font-size:13px;font-weight:800}
+.project{border-left:6px solid var(--orange)}.project:nth-child(2){border-left-color:var(--purple)}
+.timeline{display:grid;gap:16px}.edu{display:flex;gap:20px}.year{min-width:135px;color:var(--orange);font-weight:900}
+.contact{background:#172033;color:#fff;border-radius:28px;padding:45px}.contact .title{color:#fff}.contact p{color:#cbd1dd;margin:8px 0 22px}
+.contact-links{display:flex;gap:12px;flex-wrap:wrap}.contact-links a{background:#fff;color:var(--ink);padding:11px 15px;border-radius:10px;font-weight:800}
+footer{text-align:center;padding:35px;color:var(--muted)}
+@media(max-width:800px){.hero{grid-template-columns:1fr}.profile{transform:none}.grid{grid-template-columns:1fr}.links{display:none}h1{letter-spacing:-2px}.edu{flex-direction:column;gap:3px}}
+</style>
+</head>
+<body>
+<nav><div class="nav"><div class="logo">PK.</div><div class="links">
+<a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#education">Education</a><a href="#contact">Contact</a>
+</div></div></nav>
+
+<header class="hero">
+<div><span class="badge">Computer Science & Engineering Student</span>
+<h1>Hi, I'm <span class="gradient">Paras Katyal</span></h1>
+<p>I build practical projects with Python and explore data science, databases, Git, and AI-powered solutions.</p>
+<div class="buttons"><a class="btn primary" href="#projects">View My Projects</a><a class="btn secondary" href="mailto:mk431301@gmail.com">Contact Me</a></div></div>
+<div class="profile"><div class="avatar">PK</div><h2>Paras Katyal</h2><p>Lovely Professional University</p><p>B.Tech — Computer Science & Engineering</p><p style="margin-top:18px"><strong>CGPA: 8.27</strong></p></div>
+</header>
+
+<section id="about"><h2 class="title">About Me</h2><p class="sub">A quick introduction based on my CV.</p>
+<div class="card"><p>I am a Computer Science and Engineering student at Lovely Professional University. My technical interests include Python, C, data science libraries, databases, and software development tools. I enjoy problem solving and building practical projects, including an IoT-based smart AI queue system and a free Python programming series.</p></div></section>
+
+<section id="skills"><h2 class="title">Skills</h2><p class="sub">Technologies and tools listed in my CV.</p>
+<div class="grid">
+<div class="card"><h3>Programming</h3><span class="tag">Python</span><span class="tag">C</span></div>
+<div class="card"><h3>Data Science</h3><span class="tag">Pandas</span><span class="tag">NumPy</span><span class="tag">Matplotlib</span></div>
+<div class="card"><h3>Databases</h3><span class="tag">PostgreSQL</span><span class="tag">MySQL</span></div>
+<div class="card"><h3>Tools</h3><span class="tag">Git</span><span class="tag">GitHub</span><span class="tag">VS Code</span></div>
+<div class="card"><h3>Soft Skill</h3><span class="tag">Problem Solving</span></div>
+</div></section>
+
+<section id="projects"><h2 class="title">Projects</h2><p class="sub">Selected work from my CV.</p>
+<div class="grid">
+<div class="card project"><h3>IoT Based Smart AI Queue System</h3><p>Smart AI queue system designed to detect the number of people standing in a queue. It can be used in canteens and hostel messes, with API graphs used to show the data.</p><span class="tag">IoT</span><span class="tag">AI</span><span class="tag">API Graphs</span><p style="margin-top:15px"><strong>December 2025</strong></p></div>
+<div class="card project"><h3>Python Programming for Beginners</h3><p>A free YouTube educational series focused on Python programming for beginners.</p><span class="tag">Python</span><span class="tag">Education</span><span class="tag">YouTube</span></div>
+</div></section>
+
+<section><h2 class="title">Certifications & Achievements</h2><div class="grid">
+<div class="card"><h3>C-Language Certificate</h3><p>Neocolab</p><span class="tag">April 2026</span></div>
+<div class="card"><h3>Introduction to Python</h3><p>Infosys Springboard</p><span class="tag">March 2026</span></div>
+<div class="card"><h3>Highlights</h3><p>7.8 TGPA in 1st semester<br>8.6 TGPA in 2nd semester<br>25+ LeetCode problems solved</p></div>
+</div></section>
+
+<section id="education"><h2 class="title">Education</h2><div class="timeline">
+<div class="card edu"><div class="year">Aug 2025–Present</div><div><h3>Lovely Professional University</h3><p>Bachelor of Technology — Computer Science and Engineering</p><p><strong>CGPA: 8.27</strong> · Phagwara, Punjab</p></div></div>
+<div class="card edu"><div class="year">Mar 2024–Apr 2025</div><div><h3>DIPS Suranussi</h3><p>Intermediate · <strong>73%</strong> · Jalandhar, Punjab</p></div></div>
+<div class="card edu"><div class="year">Mar 2023–Apr 2024</div><div><h3>DIPS Suranussi</h3><p>Matriculation · <strong>83%</strong> · Jalandhar, Punjab</p></div></div>
+</div></section>
+
+<section id="contact"><div class="contact"><h2 class="title">Let's Connect</h2><p>Interested in my work or want to get in touch?</p>
+<div class="contact-links"><a href="mailto:mk431301@gmail.com">Email</a><a href="https://linkedin.com/in/paras-Katyal-490002391" target="_blank">LinkedIn</a><a href="https://github.com/ParasKatyal" target="_blank">GitHub</a><a href="tel:+919876160551">+91-9876160551</a></div></div></section>
+<footer>© 2026 Paras Katyal · Bright, responsive personal portfolio.</footer>
+</body></html>
